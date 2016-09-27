@@ -52,9 +52,9 @@ node default {
    # content => "It's Puppet time!\n",
    # }
    
-   exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-   path => '/usr/local/bin',
-   creates => '/etc/motd',
-   }
+   #exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
+   #path => '/usr/local/bin',
+   #creates => '/etc/motd',
+  # }
  
 }
