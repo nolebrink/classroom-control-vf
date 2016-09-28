@@ -59,6 +59,7 @@ node default {
   #include users
  # include skeleton
  include nginx
+ include aliases
  
  if $::virtual != 'physical' {
 $vmname = capitalize($::virtual)
