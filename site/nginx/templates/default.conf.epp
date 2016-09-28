@@ -2,8 +2,8 @@
  server {
     listen 80;
 
-    root /var/www;
-    index index.html index.htm;
+    root <%= $docroot %>;
+index index.html index.htm;
 
     server_name _;
 }
