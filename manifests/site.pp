@@ -58,7 +58,12 @@ node default {
   # }
   #include users
  # include skeleton
- include nginx
+ #include nginx
+ 
+ class { 'nginx':
+root => '/var/www/html',
+}
+
  include aliases
  include users
  
