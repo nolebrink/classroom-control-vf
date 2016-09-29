@@ -70,7 +70,7 @@ class nginx (
   file { "${blockdir}/default.conf":
     ensure  => file,
     #source  => 'puppet:///modules/nginx/default.conf',
-    content => epp('nginx/default_conf.epp'),
+    content => epp('nginx/default.conf.epp'),
     require => Package[$package],
   }
 
