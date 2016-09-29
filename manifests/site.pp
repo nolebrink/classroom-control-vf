@@ -61,7 +61,7 @@ node default {
  
  
  
- include nginx
+ #include nginx
  include aliases
  #include users
  
