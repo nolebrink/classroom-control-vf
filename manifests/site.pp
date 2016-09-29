@@ -60,9 +60,7 @@ node default {
  # include skeleton
   # include nginx
  
-class { 'nginx':
-root => '/var/www/html',
-}
+
 
  include aliases
  include users
